@@ -1,0 +1,265 @@
+
+/* النمط الافتراضي (للشاشات الصغيرة) */
+
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size:4px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+   #btn {
+            display: none;
+            position: fixed;
+            bottom: 22px;
+            right: 22px;
+            background-color: red;
+            z-index:1;
+            color: red#ffdfaa;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        
+        
+        
+        
+header{background-color:#15a1ff ;
+font-size:.2rem;
+display:flex;
+height: 60px;
+width: 100wv;
+aflign-items:flex-start;
+align-items:center;
+justify-content:space-evenly;
+margin-top:2;padding: 10;
+display: flex;
+djustify-content: center;
+align-items: center;
+margin-buttom:0;
+ border:5px solid #2bc0ff;
+    border-radius: 25%;
+   box-shadow:2px 4px 1px 4px;
+}
+
+links{margin-top:20
+padding: 10;
+    display: flex;
+    gap: 10px;
+}
+
+    a{color: #ff157e;
+   
+    font-size:1rem;
+    opacity:.9
+    }
+smal_header {padding: 20px;
+    background: #2bc0ff;
+    height: 60%;
+    width: 100wv;
+    font-size:.7rem;
+    font-family: Arial, sans-serif;
+   v margin: 20px ;
+    bpadding: 20px;
+   display: inline;
+   justify-content: center;
+    align-items: center;
+      
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border:5px solid #2bc0ff;
+    border-box-shadow:2px 4px 1px 4px;: 25px;
+    box-shadow:14px 4px 44px 2px;
+    
+        position: absolute;
+       r     bottom:-25%; /* يبدأ من الربع الأخير للعناصر الأب */
+           left:30px;
+            width: 70%;
+            top:200px;
+            height: 700px; /* يمتد لأسفل */
+            background-co
+    
+}
+.cover{ 
+position: relative;
+ background: #afff6a;
+height: 400px;
+   
+width: 100%;
+height: 400px; 
+margin-top:10 ;
+
+background-size:cover;
+v background-image:  url('images/a10.jpg');
+background-image: url('images/a10.jpg');
+ 
+
+#backgroung-blend-mode:overlay;
+ 
+
+
+}
+smal_header h1{align-items: center;color: #ff001f;
+      display:flex;
+      justify-content:center;
+}
+
+par{height:800px;
+
+ border:5px solid #;
+    border-radius: 50px;
+    max-width: 1200px;
+    margin:20px auto;
+    flex-direction:row;
+    flex-wrap:wrap;
+    padding: 20;
+    display:flex;
+    align-content:space-around;
+    justify-content:space-around;
+     border:5px solid #2bc0ff;
+    border-radius: 4px;
+    box-shadow:14px 4px 44px 2px;
+    position: absolute;
+    top:1100px;
+#align-items:flex-start
+
+}
+.child{
+    font-size:20px;
+    padding:30px;
+    color:#fff;
+    width: calc(33.333% - 20px);
+    max-width: 100%;
+    height: auto;
+     display:flex;
+    flex-direction:column;
+    align-items:center;
+     border:5px solid #ffeaea;
+    border-radius: 40px;
+    box-shadow:14px 4px 44px 2px;
+
+
+}
+
+
+.parent  .child img{width:100%;
+height: 100%;
+background: #ceff55;
+color: #7b2bff;
+   border:5px solid #dfd5ff;
+    border-radius: 40px;
+    box-shadow:14px 4px 44px 2px;
+
+
+
+}
+
+.child-1{background:#ff1554 ;
+order:1;
+opacity:.5;
+display:grow;
+ align-content:space-around;
+/* لووضع العناصر موسطة عموديا */
+   
+
+}
+
+.child-2{background:#6affb6;
+
+
+
+
+}
+.child-3{background:#ffd5df;}
+.child-4{background:#4615ff;}
+.child-5{background:#ff9d00;}
+.child-6{background:rgb(12,20,100,.5);}
+.child-7{background:#ffd5df;order:3}
+.child-8{background:#4615ff;}
+.child-9{background:#ff9d00;}
+.child-10{background:#ff9d00;}
+
+par1{
+    padding: 20;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+   justify-content:center;
+   % align-items:center;
+  y align-content:space-around;
+       align-items:center;
+  justify-content:center;
+    position: absolute;
+    top:1500px;
+    height: 1800px;
+    }
+
+par1 p{
+
+  
+    color: #55ff97;
+    
+    font-size:.6rem;
+
+    }
+gpar1 h1{align-self:start;}    
+fpar1 img{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.font1{font-size: 20px;
+color: #ff2b74;}
+body a{font-size: 20px;
+font-color:#404eff;
+}
+par1 a{
+    font-color:#47ff40;
+}
+
+/* chat gpt */
+/* لنفترض أن العنصر له معرف "myDiv" */
+.ttcover{
+    background-image: url('images/a2.jpg');
+    background-size: cover; /* لضبط الصورة لتغطية الخلفية بأكملها */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
+    background-position: center; /* لتوسيط الصورة في الخلفية */
+}
+   .container {
+            position: relative;
+            width: 100%;
+            height: 400px; /* مثال لطول العنصر الأول */
+            background-color: lightblue;
+        }
+
+        .overlay {
+            position: absolute;
+       r     bottom:-25%; /* يبدأ من الربع الأخير للعناصر الأب */
+            left:100px;
+            width: 60%;
+            top:300px;
+            height: 125%; /* يمتد لأسفل */
+            background-color: rgba(255, 0, 0, 0.5); /* لون نصف شفاف للتمييز */
+        }
+.news h1color: ;{align-items: center;color: #ff001f;
+      display:flex;
+      justify-content:center;
+ }
+.simble img{width:300px;
+height:300px;
+position: absolute;
+    top:3000px;
+    height: 100px;
+}
