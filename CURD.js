@@ -43,7 +43,7 @@ function gettotal() {
  if(localStorage.product !=null){datapro=JSON.parse(localStorage.product)}  else{datapro=[];}
 
 submint.onclick=function () {
-
+gettotal();
 let newpro={
     title:title.value.toLowerCase(),
     price:price.value,
@@ -55,8 +55,11 @@ let newpro={
     total:total.innerHTML 
 }
 
-if(title.value!=''&& price.value!=''&&category.value!=''&&count.value<101){  if (mode==='create') {
-    if(newpro.count>1)
+if(title.value!=''&& price.value!=''&&category.value!=''){  if (mode==='create') {
+    
+    
+    
+    if(newpro.count>1 && count.value<50)
 {
     for(i=0;i<newpro.count;i++)
     {datapro.push(newpro); }
@@ -68,7 +71,6 @@ if(title.value!=''&& price.value!=''&&category.value!=''&&count.value<101){  if 
      datapro.push(newpro);    
     } 
     
-    
     }
   else{
      datapro[temp]=newpro;
@@ -78,10 +80,7 @@ if(title.value!=''&& price.value!=''&&category.value!=''&&count.value<101){  if 
  submint.innerHTML='اضافة منتج جديد'
   } 
    cleardata();
-  }
-
-  
-         
+  }       
     localStorage.product=JSON.stringify(datapro);  
     
      gettotal();   
@@ -117,12 +116,6 @@ gettotal();
  <button onclick="DeleteAll()">حذف جميع العناصر</button>`} 
  else  {   
      btnDeleteAll.innerHTML=''}
-   
- 
-
- 
-
- 
     }
     
   function updatedata(I) {
@@ -131,7 +124,7 @@ gettotal();
   taxes.value=datapro[I].taxes;
  ads.value=datapro[I].ads;
 total.innrHTMK=datapro[I].title;
- gettotal(); category.value=datapro[I].category; 
+  category.value=datapro[I].category; 
     count.ads=datapro[I].ads; 
  count.style.display='none';
  
@@ -147,12 +140,10 @@ total.innrHTMK=datapro[I].title;
    
 }
 
-
 function DeleteAll() {
    localStorage.clear();
    datapro.splice(0);
    showdata();
-   
 }
 
  function deletData(I) {

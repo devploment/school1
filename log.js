@@ -1,4 +1,3 @@
-// قائمة المستخدمين المسجلين مسبقاً
 const users = [
     { username: 'abc', password: '123', email: 'queendreem 199@gmail.com' },
     { username: 'user2', password: 'pass2', email: 'user2@example.com' }
@@ -17,7 +16,7 @@ function login() {
         localStorage.setItem('loggedInUser', JSON.stringify(user));
     //    alert('تسجيل دخول ناجح!');
         // تحويل إلى الصفحة الرئيسية
-        window.location.href = 'mandoma.html';
+        window.location.href = 'mandoda.html';
     } else {
         alert('اسم المستخدم أو كلمة المرور غير صحيحة');
     }
