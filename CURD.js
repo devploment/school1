@@ -43,7 +43,7 @@ function gettotal() {
  if(localStorage.product !=null){datapro=JSON.parse(localStorage.product)}  else{datapro=[];}
 
 submint.onclick=function () {
-gettotal();
+
 let newpro={
     title:title.value.toLowerCase(),
     price:price.value,
@@ -56,10 +56,7 @@ let newpro={
 }
 
 if(title.value!=''&& price.value!=''&&category.value!=''){  if (mode==='create') {
-    
-    
-    
-    if(newpro.count>1 && count.value<50)
+    if(newpro.count>1)
 {
     for(i=0;i<newpro.count;i++)
     {datapro.push(newpro); }
@@ -71,6 +68,7 @@ if(title.value!=''&& price.value!=''&&category.value!=''){  if (mode==='create')
      datapro.push(newpro);    
     } 
     
+    
     }
   else{
      datapro[temp]=newpro;
@@ -80,7 +78,10 @@ if(title.value!=''&& price.value!=''&&category.value!=''){  if (mode==='create')
  submint.innerHTML='اضافة منتج جديد'
   } 
    cleardata();
-  }       
+  }
+
+  
+         
     localStorage.product=JSON.stringify(datapro);  
     
      gettotal();   
@@ -116,6 +117,12 @@ gettotal();
  <button onclick="DeleteAll()">حذف جميع العناصر</button>`} 
  else  {   
      btnDeleteAll.innerHTML=''}
+   
+ 
+
+ 
+
+ 
     }
     
   function updatedata(I) {
@@ -140,10 +147,12 @@ total.innrHTMK=datapro[I].title;
    
 }
 
+
 function DeleteAll() {
    localStorage.clear();
    datapro.splice(0);
    showdata();
+   
 }
 
  function deletData(I) {
